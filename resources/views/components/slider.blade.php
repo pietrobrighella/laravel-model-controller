@@ -6,7 +6,7 @@
     </div>
 
     <div class="carousel-inner">
-
+        <h2>Shuffle > Take(3) > Sort(vote)</h2>
         @foreach ($slider as $slide)
             <div class="carousel-item active">
                 <img src="{{ $slide->image }}" class="d-block w-100" alt="{{ $slide->title }}">
