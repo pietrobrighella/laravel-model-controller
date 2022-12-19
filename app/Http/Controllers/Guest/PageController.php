@@ -10,7 +10,10 @@ class PageController extends Controller
 {
     public function index(){
         $movies = Movie::all();
-        $slider = $movies->shuffle()->take(3)->sortByDesc('vote');
+        $slider = $movies->shuffle()->take(5)->sortByDesc('vote');
+        $slider = $slider->map(function($slider, $key) {
+            return $slider;
+        });
         //dd($slider);
         return view('home', compact('movies','slider'));
     }
