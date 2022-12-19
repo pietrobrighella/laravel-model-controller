@@ -16,7 +16,7 @@
             <div class="carousel-item @if($loop->first) active @endif">
                 <img src="{{ $slide->image }}" class="d-block w-100" alt="{{ $slide->title }}">
                 <div class="carousel-caption d-none d-md-block bg-black">
-                    <h5>{{ $slide->title }} - {{ $slide->vote }}</h5>
+                    <h5>{{ $slide->title }} - {{ $slide->vote }} ({{ $key }})</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
